@@ -91,7 +91,7 @@
     Learn more on wikipedia
     </a>
      
-    <button>
+    <button class="buy-button">
         👉Buy Ice-cream here
     </button>
 
@@ -99,5 +99,20 @@
         This was built by Jamila Umar
    </p>
   </div>
+  <script>
+    function buy(){
+        let name = prompt("what is your name?");
+        let email = prompt("What is your email address?");
+        let flavour =prompt("What is favourite flavour?");
+
+        alert(
+            "Thank you, " + name + "! We will be in touch via email, meanwhile have lots of " + flavour + " Ice-cream"
+        );
+
+    }
+
+    let buyButton = document.querySelector(".buy-button");
+    buyButton.addEventListener("click", buy);
+  </script>
  </body>
 </html>
